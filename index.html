@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/common/reset.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>도시락으로 다 통한다, 해외 데이터는 도시락통</title>
@@ -208,28 +211,36 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script>
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 </script>
 <script src="js/index.js"></script>
 <script src="https://kit.fontawesome.com/1af51f8c7f.js" crossorigin="anonymous"></script>
 <script>
-  var swiper = new Swiper('.section3__swiper', {
+  var swiper = new Swiper(".section3__swiper", {
     slidesPerView: 1,
     freeMode: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
     },
   });
 </script>
