@@ -1,0 +1,124 @@
+.section2 {
+  width: 1440px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.section2_wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section2_wrap > aside {
+  width: 100%;
+  padding: 2% 0;
+  font-size: 44px;
+  font-weight: 600;
+  color: #222222;
+  box-sizing: border-box;
+}
+
+.section2_wrap > aside > h3 > span {
+  color: #3a68b2;
+}
+
+.section2_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.section2_right_top {
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 3% 0;
+  box-sizing: border-box;
+}
+.section2_right_top > h4 > span {
+  color: #3a68b2;
+}
+
+.section2_right_middle,
+.section2_right_bottom {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2_right_bottom_aboutUS {
+  /* max-width: 140px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 140px;
+  height: 50px;
+  padding: 0 10px;
+  margin-top: 90px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #222;
+  
+}
+
+.section2_right_bottom_aboutUS > a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #222222;
+}
+
+.section2_right_middle>p, .section2_right_bottom>p{
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+@media(max-width:1440px){
+  .section2 {
+    width: 100%;
+  }
+}
+
+@media(max-width:1110px){
+  .section2_wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  } 
+  .section2_right {
+    text-align: center;
+  }
+  .section2_right_bottom_aboutUS {
+  margin: 0 auto;
+  }
+  .section2_wrap > aside{
+    font-size: 38px;
+  }
+  .section2_right_top{
+    font-size: 24px;
+  }
+}
+
+@media(max-width:768px){
+  .section2_right_bottom_aboutUS {
+    margin: 0 auto;
+    }
+    .section2_wrap > aside{
+      font-size: 34px;
+    }
+}

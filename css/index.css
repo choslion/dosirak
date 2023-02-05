@@ -1,0 +1,11 @@
+@import url(common/reset.css);
+@import url(header.css);
+@import url(mainSec1.css);
+@import url(mainSec2.css);
+@import url(mainSec3.css);
+@import url(footer.css);
+
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}

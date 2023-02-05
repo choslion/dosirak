@@ -1,0 +1,226 @@
+.bg1 {
+  background: url(../img/main_visual_2.jpg) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 76px;
+  box-sizing: border-box;
+  min-height: 970px;
+}
+.bg2 {
+  background: url(../img/main_visual_3.jpg) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 76px;
+  box-sizing: border-box;
+  min-height: 970px;
+}
+.bg3 {
+  background: url(../img/main_visual_4.jpg) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 76px;
+  box-sizing: border-box;
+  min-height: 970px;
+}
+
+header {
+  width: 100%;
+  /* height: 100px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(240, 220, 220, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.header_LOGO {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.header_LOGO > a {
+  background-image: url(../img/logo_white.png);
+  width: 125px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header_LOGO > a > img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.header_gnb {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 900px;
+}
+.header_gnb > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_gnb > ul > li > a {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+}
+
+.header_gnb > ul > li:hover a::after {
+  width: 100%;
+  opacity: 100%;
+}
+.header_gnb > ul > li > a::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.7s;
+  opacity: 2s;
+}
+
+.nav_button {
+  width: 30px;
+  margin-right: 35px;
+  display: none;
+}
+
+.nav_button i {
+  padding-top: 5px;
+  color: inherit;
+}
+
+.header_main {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 9999;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header_main_con {
+  width: 100%;
+  padding: 1% 0;
+  box-sizing: border-box;
+}
+
+.header_main_con > ul > li {
+  color: #fff;
+}
+.header_main_con > ul > li:nth-child(1) {
+  font-size: 77px;
+  font-weight: bold;
+}
+.header_main_con > ul > li:nth-child(2) {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.more_arrow {
+  margin-top: 50px;
+  width: 180px;
+  height: 55px;
+  padding: 2% 0;
+  border: 1px solid rgba(240, 220, 220, 0.7);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.more_arrow > a {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+#h_wrap {
+  transition: all 0.5s;
+}
+#h_wrap.focus {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+#h_wrap.focus > .header_LOGO > a {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 125px;
+  height: 30px;
+}
+
+#h_wrap.focus > .header_gnb > ul > li > a {
+  font-size: 17px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+#h_wrap.focus > .header_gnb > ul > li:hover a::after {
+  width: 100%;
+  opacity: 100%;
+}
+#h_wrap.focus > .header_gnb > ul > li > a::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: 0.7s;
+  opacity: 2s;
+}
+
+@media screen and (max-width: 1280px) {
+  .header_main {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .header_main_con > ul > li > h1 {
+    font-size: 50px;
+  }
+  .header_main_con > ul > li:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header_LOGO {
+    width: 320px;
+  }
+  .header_gnb {
+    display: none;
+  }
+  .nav_button {
+    display: block;
+  }
+
+  .header_main_con > ul > li > h1 {
+    font-size: 42px;
+  }
+
+  .header_main_con > ul > li:nth-child(2) {
+    font-size: 17px;
+  }
+}
